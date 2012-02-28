@@ -1,0 +1,36 @@
+Script for tools
+--------
+
+* lein help, new
+  - project.clj, dependencies
+  - src lib
+* lein deps, lein swank
+* slime connect
+  - repl
+* Live Emacs Coding
+  - color scheme and rainbow parens
+  - clojure mode
+  - paredit mode
+  - inline docs, autocomplete
+  - dont enter æøå
+
+
+* Slime
+  - C-x C-e, C-x M-p,
+  - history
+  - M-. M-, C-c C-d C-d
+
+* CDT
+  - (use 'swank.cdt)
+  - (set-bp) C-c C-x C-b,
+  - (bg (form))
+  - (reval)
+  - (delete-all-breakpoints)
+  ...
+  - (swank.core/break)
+
+* REPL tools
+  - doc, find-doc, source
+  - javadoc
+  - in-ns
+  - clojure.pprint

@@ -1,11 +1,11 @@
 (ns demo.app-logic
   (:require  [demo [app-services :as service]
-              [app-ui :as ui]]
+                   [app-ui :as ui]]
              [clojure.pprint :as pp])
   (:use demo.swing-utils))
 
 
-(declare *frame*)
+(declare frame)
 
 (defn search-debug-handler
   [txt]
@@ -13,4 +13,4 @@
 
 (defn present-result
   [txt]
-  (ui/show-result-in-frame *frame* (service/search txt)))
+  (ui/show-result-in-frame frame (service/search txt)))

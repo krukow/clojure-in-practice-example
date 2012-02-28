@@ -1,5 +1,5 @@
 (ns demo.app-services
-  (:require [demo [aws :as aws]]
+  (:require [demo.aws :as aws]
             [cemerick.rummage :as sdb]
             [clucy.core :as lucy]
             [clojure.data.csv :as csv]
@@ -56,7 +56,6 @@
 (defn write-ratings-to-index
   []
   (apply lucy/add index (merge-data-sources (fetch-ratings))))
-
 
 (defn writer
   []
